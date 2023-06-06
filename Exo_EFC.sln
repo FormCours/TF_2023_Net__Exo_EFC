@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_EFC", "Exo_EFC\Exo_EFC.csproj", "{01D733FB-23FA-415B-9A77-A0398DEEE48D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_EFC.DAL", "Exo_EFC.DAL\Exo_EFC.DAL.csproj", "{0532ADD9-2F5E-4A5F-BC15-64A6E0514927}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01D733FB-23FA-415B-9A77-A0398DEEE48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D733FB-23FA-415B-9A77-A0398DEEE48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D733FB-23FA-415B-9A77-A0398DEEE48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D733FB-23FA-415B-9A77-A0398DEEE48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0532ADD9-2F5E-4A5F-BC15-64A6E0514927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0532ADD9-2F5E-4A5F-BC15-64A6E0514927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0532ADD9-2F5E-4A5F-BC15-64A6E0514927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0532ADD9-2F5E-4A5F-BC15-64A6E0514927}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BC9E2F2-F20A-4458-89C7-78B396AE0BDA}
+	EndGlobalSection
+EndGlobal
