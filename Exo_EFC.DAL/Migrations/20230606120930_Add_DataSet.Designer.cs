@@ -4,6 +4,7 @@ using Exo_EFC.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Exo_EFC.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230606120930_Add_DataSet")]
+    partial class Add_DataSet
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,8 +29,7 @@ namespace Exo_EFC.DAL.Migrations
                     b.Property<Guid>("MovieId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasColumnName("Movie_Id")
-                        .HasDefaultValueSql("NEWSEQUENTIALID()");
+                        .HasColumnName("Movie_Id");
 
                     b.Property<string>("Director")
                         .IsRequired()
@@ -67,7 +68,7 @@ namespace Exo_EFC.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            MovieId = new Guid("31c869b5-da2a-48ff-ae67-f5ffd5fc46c8"),
+                            MovieId = new Guid("1684fb20-018e-4f70-b18a-a297a1b16ed7"),
                             Director = "Georges Lucas",
                             Genre = "Science-Fiction",
                             MainActor = "Mark Hammil",
@@ -76,7 +77,7 @@ namespace Exo_EFC.DAL.Migrations
                         },
                         new
                         {
-                            MovieId = new Guid("38643a14-6a29-454c-99bf-316847afdd7f"),
+                            MovieId = new Guid("c34329df-8d4e-4e79-bc49-7061d1477ceb"),
                             Director = "Georges Lucas",
                             Genre = "Science-Fiction",
                             MainActor = "Mark Hammil",
@@ -85,7 +86,7 @@ namespace Exo_EFC.DAL.Migrations
                         },
                         new
                         {
-                            MovieId = new Guid("cd0a8e26-218b-4d3d-a686-fe4626831296"),
+                            MovieId = new Guid("1bd64d5d-968d-4a54-98d0-6c527034ba3d"),
                             Director = "Georges Lucas",
                             Genre = "Science-Fiction",
                             MainActor = "Mark Hammil",
@@ -94,7 +95,7 @@ namespace Exo_EFC.DAL.Migrations
                         },
                         new
                         {
-                            MovieId = new Guid("ff75ea0e-f7e6-43ca-9dd3-56efdd236088"),
+                            MovieId = new Guid("e142850c-9be4-4b18-9539-d7ba5520214f"),
                             Director = "Lexi Alexander",
                             Genre = "Société",
                             MainActor = "Charlie Hunnam",
@@ -103,7 +104,7 @@ namespace Exo_EFC.DAL.Migrations
                         },
                         new
                         {
-                            MovieId = new Guid("021ccee9-88e3-454c-969a-0858d50fb555"),
+                            MovieId = new Guid("3fd4cba4-0744-4e9f-9573-4b6eebba1047"),
                             Director = "Peter Jackson",
                             Genre = "Heroic-Fantasy",
                             MainActor = "Elijah Wood",
@@ -112,7 +113,7 @@ namespace Exo_EFC.DAL.Migrations
                         },
                         new
                         {
-                            MovieId = new Guid("7fed4c53-4eda-4a10-9ac8-c6d505d26693"),
+                            MovieId = new Guid("d99a5b87-699b-44d6-a4ac-df95f07fc966"),
                             Director = "Peter Jackson",
                             Genre = "Heroic-Fantasy",
                             MainActor = "Elijah Wood",
@@ -121,7 +122,7 @@ namespace Exo_EFC.DAL.Migrations
                         },
                         new
                         {
-                            MovieId = new Guid("61f0263f-25ea-4bec-84cc-bfb80fae52b4"),
+                            MovieId = new Guid("d99a6011-ed47-40be-8298-abb86e42d1c9"),
                             Director = "Peter Jackson",
                             Genre = "Heroic-Fantasy",
                             MainActor = "Elijah Wood",

@@ -1,11 +1,6 @@
 ﻿using Exo_EFC.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exo_EFC.DAL.FluentApiConfigs
 {
@@ -22,7 +17,7 @@ namespace Exo_EFC.DAL.FluentApiConfigs
             // - Colonnes
             builder.Property(m => m.MovieId)
                 .HasColumnName("Movie_Id")
-                .ValueGeneratedOnAdd();
+                .HasDefaultValueSql("NEWSEQUENTIALID()");
             builder.Property(m => m.Title)
                 .HasMaxLength(100)
                 .IsRequired();

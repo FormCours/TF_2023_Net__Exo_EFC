@@ -1,5 +1,6 @@
 ﻿using Exo_EFC.DAL.Entities;
 using Exo_EFC.DAL.FluentApiConfigs;
+using Exo_EFC.DAL.Seeds;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Exo_EFC.DAL
 {
     public class AppDbContext : DbContext
     {
-        DbSet<Movie> Movies { get; init; }
+        public DbSet<Movie> Movies { get; init; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -23,6 +24,7 @@ namespace Exo_EFC.DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new MovieConfig());
+            modelBuilder.ApplyConfiguration(new MovieSeed());
         }
     }
 }
